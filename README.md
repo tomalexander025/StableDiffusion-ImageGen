@@ -37,3 +37,7 @@ As I continue learning, here are some potential enhancements:
 Adding support for more AI models and customization options.
 Improving the UI/UX for a smoother user experience.
 Implementing a backend to handle requests securely.
+
+
+Prompt: Captain America jumps with his shield raised to strike the furious Hulk amidst a ruined city with debris and destroyed buildings under a cloudy sky.
+
