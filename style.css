@@ -1,0 +1,175 @@
+/* General body styles with background transition */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #8ff7c8, #b7f7da, #bdf8da); /* Linear gradient background */
+    background-size: 300% 100%; /* Extend the gradient to allow movement */
+    padding: 20px;
+    transition: background 0.2s ease; /* Transition for background */
+    animation: moveBackground 5s linear infinite; /* Background moving animation */
+}
+
+/* Keyframes for moving background */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    100% {
+        background-position: 100% 50%; /* End position */
+    }
+}
+
+/* Container styling */
+.container {
+    max-width: 70%;
+    margin: auto;
+    background: rgba(245, 245, 245, 0.8); /* Semi-transparent white */
+    padding: 50px;
+    border-radius: 2rem;
+    box-shadow: 70px 70px 70px rgba(26, 39, 28, 0.1);
+    background-image: url('path/to/your/grain-texture.png'); /* Add your grain texture image */
+    background-size: cover; /* Cover the entire container */
+    transition: background-color 0.2s ease; /* Transition for container background */
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #00a075;
+}
+
+/* Spacer to add space between h1 and LinkedIn */
+.spacer {
+    height: 10px;
+}
+
+/* Custom styles for the <strong> element */
+strong {
+    color: #007bff; /* Change text color */
+    font-weight: bold; /* Ensure bold text (default for <strong>) */
+    font-size: 1.1em; /* Adjust font size */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 2px;
+    font-size: 0.87em;
+    color: #024b28;
+}
+
+/* Input fields and dropdown styling */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #026541;
+}
+
+
+
+/* Custom styles for input boxes */
+input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 12px; /* Increase padding for better spacing */
+    margin: 5px 0;
+    border-radius: 8px; /* More rounded corners */
+    border: 2px solid #026541; /* Green border */
+    background-color: #f0f8ff; /* Light background color */
+    font-size: 1.1em; /* Increase font size */
+    transition: box-shadow 0.4s ease; /* Add a smooth shadow transition */
+}
+
+/* Input box focus effect */
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(1, 255, 52, 0.8); /* Add shadow on focus */
+}
+
+/* Slider styling */
+input[type="range"] {
+    margin-bottom: 0px; /* Reduce space between the slider and output */
+    width: 100%; /* Optional: Ensure the slider takes the full width */
+}
+
+output {
+    display: inline-block; /* Aligns the output with the slider */
+    margin-top: 0px; /* Reduce space between the slider and output */
+    margin-bottom: 20px; /* Retain bottom margin for spacing from subsequent elements */
+    font-weight: bold; /* Makes the text bold */
+    color: #024b28; /* Matches the color scheme */
+}
+/* Custom width for the 'Select GPT Model' dropdown */
+#gpt {
+    width: 20%; /* Set the width to 20% for the GPT model dropdown */
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; /* Transition for button hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #00fa47;
+}
+
+/* Result section hidden initially */
+#result {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Spinner hidden initially */
+#spinner {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styling for the generated image */
+#image {
+    width: 60%;
+    border-radius: 1rem;
+    margin: 30px auto; /* Center the image and add top and bottom margin */
+    display: block;     /* Make the image a block element */
+}
+
+/* Notes section */
+#notes {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgb(0, 112, 60);
+}
+
+/* Styling for unordered list inside notes */
+#notes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Processing time text styling */
+#time {
+    margin-top: 10px;
+    font-size: 1em;
+    color: rgb(0, 24, 19);
+    text-align: center;
+    background-color: #83ebfd;
+    width: 30%;        /* Adjusted width for better centering */
+    margin-left: auto; /* Center the text horizontally */
+    margin-right: auto;/* Center the text horizontally */
+    display: block;    /* Make it a block element */
+    padding: 10px;    /* Optional: Add some padding for better appearance */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+

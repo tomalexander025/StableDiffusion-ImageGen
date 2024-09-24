@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generation with Stable Diffusion</title>
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Container for the entire page content -->
+    <div class="container">
+        <!-- Title of the project -->
+        <h1>StableDiffusion-ImageGen | Ayush Sharma Project</h1>
+
+        <!-- Adding space between the title and LinkedIn link -->
+        <div class="spacer"></div>
+
+        <!-- Display LinkedIn profile -->
+        <p><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/ayush-sharma-a086552b8/" target="_blank">AYUSH SHARMA</a>
+        </p>
+
+        <!-- Display email address -->
+        <p><strong>Email:</strong> sharmaayushajay025@gmail.com</p>
+
+        <!-- Token input for Hugging Face API -->
+        <label for="token">Enter your Hugging Face Token:</label>
+        <input type="password" id="token" placeholder="Enter Token">
+        <br>
+        
+        <!-- Text input for the image generation prompt -->
+        <label for="prompt">Enter prompt:</label>
+        <input type="text" id="prompt" value="airplane traveling to different planet">
+        <br><br><br>
+        
+        <label for="steps">Image Generation Steps:</label>
+        <input type="range" id="steps" min="1" max="100" value="35" oninput="this.nextElementSibling.value = this.value">
+        <output>35</output> <!-- Added output element to display the current value -->
+
+        <label for="guidance">Guidance Scale:</label>
+        <input type="range" id="guidance" min="1.0" max="20.0" step="0.1" value="9.0" oninput="this.nextElementSibling.value = this.value">
+        <output>9.0</output> <!-- Added output element to display the current value -->
+
+
+        <!-- Dropdown to select the GPT model -->
+        <label for="gpt">Select GPT Model:</label>
+        <select id="gpt">
+            <option value="gpt2">gpt2</option>
+            <option value="gpt-3.5">gpt-3.5</option>
+        </select>
+
+        <!-- Button to trigger image generation -->
+        <button id="generate">Generate Image</button>
+
+        <!-- Spinner to show loading state -->
+        <div id="spinner" class="spinner">Generating image...</div>
+
+        <!-- Container to display the generated image and processing time -->
+        <div id="result">
+            <img id="image" alt="Generated Image">
+            <p id="time"></p>
+        </div>
+        
+        <!-- Section to display notes on image generation -->
+        <div id="notes">
+            <h3>Notes:</h3>
+            <ul>
+                <li><strong>Image Generation Steps:</strong> Controls the number of steps taken to generate the image.</li>
+                <br>
+                <li><strong>Guidance Scale:</strong> Adjusts how closely the generated image adheres to the prompt.</li>
+                <br>
+                <li><strong>Model Used:</strong> Stable Diffusion 2 from Stability AI.</li>
+                <br>
+                <li><strong>Token Input:</strong> Please provide your Hugging Face token to access the models.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="/script.js"></script>
+</body>
+</html>
