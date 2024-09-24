@@ -44,3 +44,7 @@ Implementing a backend to handle requests securely.
 
 ![1](https://github.com/user-attachments/assets/f9e15159-09ab-4671-b0cf-981dfa71f4e6)
 
+
+## Prompt: Monkey eating noodles
+
+![image](https://github.com/user-attachments/assets/d0b9083d-47ba-4d91-90ef-5dda0604fee8)
