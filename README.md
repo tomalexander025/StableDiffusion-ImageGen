@@ -1,5 +1,6 @@
 # StableDiffusion-ImageGen
 
+# Deployed on:  https://stablediffusion-imagegen-ayush-sharma.netlify.app/
 
 ## Project Overview
 ## StableDiffusion-ImageGen is an interactive web application that allows users to generate images based on a text prompt using the power of Stable Diffusion, a model provided by Stability AI. This project is designed to showcase how text-to-image generation works, with users being able to customize various parameters, such as the number of inference steps and the guidance scale. The app also integrates a feature to select different GPT models (gpt-2 or gpt-3.5) to assist in generating creative prompts for the image. The app connects to Hugging Face's Stable Diffusion 2 model through their API. Users can input their Hugging Face API token, enter a prompt, and adjust image generation settings to receive a custom-generated image.
